@@ -1,0 +1,38 @@
+.sub-footer{
+    background-color: $color-primary-dark;
+    grid-area: sub-footer;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(1, minmax(min-content,100rem));
+    grid-template-rows: 30rem;
+    height: 70vh;
+    padding-top: 2rem;
+}
+
+.sub__footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: $color-grey-light-1;
+    background-color:$color-background;
+    box-shadow: $shadow-box;
+    text-align: start;
+    padding: 5rem;
+}
+
+.footer__btn{
+    justify-self: right;
+    align-self: flex-end;
+    width: 20rem;
+    background-color: $color-background;
+    color: $color-grey-light-1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: $color-primary;
+    &:hover{
+        background-color: $color-primary;
+    }
+}

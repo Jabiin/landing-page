@@ -1,0 +1,70 @@
+// COLOR VARIABLES
+$color-primary: hsla(356, 76%, 43%, 1);
+;
+$color-primary-dark: hsla(0, 0%, 12%, 1);
+
+$color-background: hsla(0, 0%, 7%, 1);
+
+$shadow-box: 0px 4px 100px 20px rgba(0, 0, 0, 0.25);
+
+
+
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// responsive break points
+$bp-largest: 64em; // 1029px
+$bp-large: 44em; // 705px
+$bp-xlarge: 54em; // 870px for the header image
+
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10/16px > 16px is defualt web font size so 62.5% means 1rem is equal to 10px
+    @media only screen and (max-width:$bp-largest){
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width:$bp-large){
+        font-size: 40%;
+        
+
+
+
+    }
+}
+
+.container {
+    font-family:$font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    display: grid;
+    grid-template-rows: 80vh repeat(5, min-content);
+    grid-template-columns: 1fr repeat(8,minmax(min-content, 14rem)) 1fr ;
+    grid-template-areas:
+    "start header header header header header header header header end"
+    "start card card card card card card card card end"
+    "start  expa expa expa expa expa expa expa expa end"
+    "start projects projects projects projects projects projects projects projects end"
+    "start sub-footer sub-footer sub-footer sub-footer sub-footer sub-footer sub-footer sub-footer end"
+    "start footer footer footer footer footer footer footer footer end"
+    ;
+}
+

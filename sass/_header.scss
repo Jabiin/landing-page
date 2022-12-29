@@ -1,0 +1,78 @@
+.header{
+    background-image: url(../images/darkimg.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    grid-area: header;
+    color: $color-grey-light-1;
+
+    @media only screen and (max-width:$bp-xlarge){
+        background-image: url(../images/darkimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: header;
+        
+
+
+
+    }
+    
+}
+.nav__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 3rem;
+    flex-wrap: wrap;
+    padding: 1.4rem ;
+}
+nav{
+    ul{
+        li{
+            display: inline-block;
+            padding-right: 3rem;
+            list-style-type: none;
+            font-size: 1.3rem;
+            &:hover{
+                background-color: $color-primary;
+            }
+        }
+    }
+    
+}
+.tex-logo{
+    padding-left: 3rem;
+    list-style-type: none;
+    font-size: 2rem;
+}
+.header__introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60vh;
+    padding-right: 15rem;
+
+    @media only screen and (max-width:$bp-xlarge){
+    padding: 0;
+
+
+    }
+}
+
+button{
+    justify-self: start;
+    align-self: center;
+    width: 20rem;
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: hidden;
+    transition: all 0.5s;
+    &:hover{
+        transform: translateY(-0.5rem);
+    }
+}

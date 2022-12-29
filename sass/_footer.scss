@@ -1,0 +1,19 @@
+footer{
+    background-color: $color-primary;
+    grid-area: footer;
+}
+.footer__content{
+    background-color: $color-background;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(1, minmax(min-content,30rem));
+    grid-template-rows: 2rem;
+    height: 10vh;
+    padding-top: 2rem;
+}
+
+.footer__simple{
+    display: flex;
+    justify-content: space-evenly;
+}

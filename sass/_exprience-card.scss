@@ -1,0 +1,58 @@
+.expirence__container{
+    background-color: $color-secondary;
+    grid-area: expa;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content,1fr));
+    grid-template-rows: repeat(1, 20rem);
+    grid-template-areas: 
+    " text       images"
+    ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 200vh;
+    background-color: $color-background;
+
+    @media only screen and (max-width:$bp-xlarge){
+        grid-template-columns: repeat(1, minmax(min-content,1fr));
+        grid-template-rows: repeat(1, 75rem);
+        grid-template-areas: 
+        "images"
+        " text"
+     
+    ;
+    }
+}
+
+.expa__card{
+    grid-area: images;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.678) 0%, rgb(52, 51, 54) 100%)
+    ,url(../images/headerbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    box-shadow: $shadow-box;
+    @media only screen and (max-width:$bp-xlarge){
+        height: 50vh;
+    width: 100%;
+    }
+}
+
+.expa__card-one{
+    grid-area: text;
+    color: $color-grey-light-1;
+    text-align: center;
+
+    @media only screen and (max-width:$bp-xlarge){
+        color: $color-grey-light-1;
+        text-align: start;
+        
+    }
+
+}
+
+
+
+

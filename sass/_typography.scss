@@ -1,0 +1,32 @@
+h1{
+   font-size: 4rem;
+   font-weight: 400;
+}
+h2{
+    font-size: 1.9rem;
+}
+// card pne h1
+.card__one-head{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+// all the card box paragraphs
+.card__paragraph{
+    color: $color-grey-light-2;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+//exprience card h1 and paragraph
+.expa__one-head{
+    font-size: 5rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.expa__one_paragraph{
+    font-weight: 400;
+    color: $color-grey-light-2;
+    font-size: 1.6rem;
+}

@@ -1,0 +1,70 @@
+.card-box{
+    background-color: $color-primary-dark;
+    grid-area: card;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, minmax(min-content,35rem));
+    grid-template-rows: 30rem;
+    height: 150vh;
+    column-gap: 2rem;
+    padding-top: 2rem;
+
+    @media only screen and (max-width:$bp-xlarge){
+        grid-template-columns: repeat(1, minmax(min-content,50rem));
+        grid-template-rows: repeat(3, minmax(min-content,40rem));
+        row-gap: 5rem;
+    
+        }
+}
+
+.card__one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-grey-light-1;
+    background-color: $color-background;
+    box-shadow: $shadow-box;
+    text-align: center;
+    padding: 5rem;
+    transition: all 0.2s;
+    &:hover{
+        background-color: $color-primary;
+        transform: translateY(-0.5rem);
+    }
+}
+
+.card__two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-grey-light-1;
+    background-color: $color-background;
+    box-shadow: $shadow-box;
+    text-align: center;
+    padding: 5rem;
+    transition: all 0.2s;
+    &:hover{
+        background-color: $color-primary;
+        transform: translateY(-0.5rem);
+    }
+}
+
+.card__three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-grey-light-1;
+    background-color: $color-background;
+    box-shadow: $shadow-box;
+    text-align: center;
+    padding: 5rem;
+    transition: all 0.2s;
+    &:hover{
+        background-color: $color-primary;
+        transform: translateY(-0.5rem);
+    }
+}
